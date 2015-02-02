@@ -1,0 +1,93 @@
+
+$v-background-color: #f5f5f5;
+
+@import "../valo/valo";
+
+.todo {
+  @include valo;
+
+  .v-label.h1 {
+    font-size: 100px;
+    font-weight: 100;
+    text-align: center;
+    color: rgba(175, 47, 47, 0.15);
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 0;
+  }
+
+  .main {
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    background: #f5f5f5;
+    color: #4d4d4d;
+    min-width: 230px;
+    max-width: 550px;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-weight: 300;
+    display: block;
+  }
+
+  .todo-component {
+    background: #fff;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    padding: 6px;
+  }
+
+  #new-todo, .v-textfield {
+  }
+
+  #new-todo {
+  }
+
+  .todo-row {
+
+    .v-textfield {
+
+      &.completed {
+        color: #d9d9d9;
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  #filter-radio span {
+    display: inline-block;
+  }
+
+  .v-button {
+    border: 1px solid transparent;
+    background-image: none;
+    box-shadow: none;
+    background-color: #fff;
+    color: #4d4d4d;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+
+  .v-textfield {
+    box-shadow: none;
+    border: 1px solid transparent;
+
+    &:focus {
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+  .v-textfield-prompt {
+    font-style: italic;
+  }
+  .v-textfield-readonly {
+    background-color: #fff;
+  }
+}
